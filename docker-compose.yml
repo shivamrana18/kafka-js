@@ -1,0 +1,10 @@
+services:
+  kafkanode:
+    image: kafkanode
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 9092:9092
